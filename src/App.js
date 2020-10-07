@@ -8,12 +8,20 @@ import Photo from "./components/photo";
 import Info from "./components/info";
 
 function App() {
+//Create "slices of state" for each component that we're using.
 const [title, setTitle] = useState("");
 const [date, setDate] = useState("");
 const [copyright, setCopyright] = useState("");
 const [imageURL, setImageURL] = useState("");
 const [info, setInfo] = useState("");
 
+//Create a function (axios) that actually fetches the data from the NASA API?
+
+
+//Declare what the individual states/components are doing, through an appropriate function (or functions?)?
+
+
+//This section should be everything returning/appending to the DOM? 
   return (
     <div className="App">
       <p>
