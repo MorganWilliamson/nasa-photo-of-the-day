@@ -4,24 +4,20 @@ import axios from "axios";
 import NasaImage from "./components/nasaImage";
 
 function App() {
-//Create "slices of state" for each component that we're using.
+//Create a slice of state for the page.
 const [nasaData, setNasaData] = useState([]); 
 
-//Create a function (axios) that actually fetches the data from the NASA API?
+//Create a function (axios) that fetches the data from the NASA API.
 useEffect(() => {
   axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
   .then(res => {
     setNasaData(res.data)
-    debugger
   })
   .catch(err => {
     debugger
   })
 
 }, [])
-
-//Declare what the individual states/components are doing, through an appropriate function (or functions?)?
-
 
 //This section should be everything returning/appending to the DOM? 
   return (
