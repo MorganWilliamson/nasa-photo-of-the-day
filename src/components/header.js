@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 //Styled Components go here
 const StyledHeader = styled.div`
-    background: black;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/9651863/thumb/1.jpg");
     color: white;
     height: 8vh;
 
