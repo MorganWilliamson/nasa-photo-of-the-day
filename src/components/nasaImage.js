@@ -7,7 +7,8 @@ const StyledBody = styled.div`
     padding: 0 2%;
 
     img{
-        box-shadow: 10px, 10px, 5px, #f4f4f4;
+        max-width: 80%;
+        max-height: 80%;
     };
 `
 
@@ -17,9 +18,9 @@ function NasaImage(props){
 //build out the proper JSX for the page here
 return <StyledBody> 
         <p>Date: {props.nasaData.date}</p>
-            <h2>Title: {props.nasaData.title}</h2>
-                <h2>Copyright: {props.nasaData.copyright}</h2>
-            <img src={props.nasaData.url} alt="Current APOD"/> 
+            <h2>{props.nasaData.title}</h2>
+                <h3>Copyright: {props.nasaData.copyright}</h3>
+            <img className="APOD" src={props.nasaData.url} alt="Current APOD"/> 
         <p>Information: {props.nasaData.explanation}</p>
     </StyledBody>;
 };

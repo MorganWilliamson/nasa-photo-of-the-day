@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.APOD{
+  box-shadow: 5px 5px 5px #FC3D21;
+}

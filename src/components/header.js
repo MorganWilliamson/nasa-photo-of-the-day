@@ -6,17 +6,23 @@ import styled from 'styled-components'
 const StyledHeader = styled.div`
     background-image: url("https://ak.picdn.net/shutterstock/videos/9651863/thumb/1.jpg");
     color: white;
-    height: 8vh;
+    height: 7vh;
+    padding-top: 2%;
 
     a{
         color: white;
         text-decoration: none;
+
+        &:hover{
+            text-shadow: 8px 8px 10px dodgerblue;
+        }
     };
     nav{
-        padding-top: 2%;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
     };
+    
 `
 //Header component goes here
 const NasaHeader = (props) => {
