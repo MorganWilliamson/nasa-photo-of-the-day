@@ -13,6 +13,21 @@ const StyledFooter = styled.div`
         max-height: 80%;
         max-width: 80%;
     };
+
+    @media (max-width: 550px){
+        padding-bottom: 7%;
+        img{
+            max-height: 60%;
+            max-width: 60%;
+        }
+    }
+    @media (max-width: 780px){
+        padding-bottom: 5%;
+        img{
+            max-height: 60%;
+            max-width: 60%;
+        }
+    }
 `
 //Footer component goes here
 const NasaFooter = (props) => {

@@ -22,6 +22,12 @@ const StyledHeader = styled.div`
         justify-content: space-evenly;
         align-items: center;
     };
+    @media (max-width: 550px){
+        padding-top: 3%;
+    }
+    @media (max-width: 780px){
+        padding-top: 3%;
+    }
     
 `
 //Header component goes here
