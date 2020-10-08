@@ -9,12 +9,12 @@ const [nasaData, setNasaData] = useState([]);
 
 //Create a function (axios) that fetches the data from the NASA API.
 useEffect(() => {
-  axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+  axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14')
   .then(res => {
     setNasaData(res.data)
   })
   .catch(err => {
-    debugger
+    console.log(err);
   })
 
 }, [])
