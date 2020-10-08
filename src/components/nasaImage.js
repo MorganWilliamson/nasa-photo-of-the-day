@@ -1,4 +1,5 @@
 import React from "react";
+import styled, { keyframes } from 'styled-components'
 
 function NasaImage(props){
     //display array so we know what data we're working with
